@@ -27,11 +27,9 @@ require("passport");
 const LocalStrategy =
 require("passport-local").Strategy;
 
-const User =
-require("./models/User");
+const User =require("./models/user");
 
-const LikedJob =
-require("./models/job");
+const LikedJob =require("./models/job");
 
 const app = express();
 
