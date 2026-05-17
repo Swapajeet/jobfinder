@@ -1,0 +1,15 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px; /* sidebar size */
+    flex-shrink: 0;
+}
+
+.content {
+    width: calc(100% - 280px);
+    padding: 20px;
+    overflow-x: hidden;
+}

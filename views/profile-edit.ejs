@@ -1,0 +1,36 @@
+<% layout("layout/boilerplate.ejs") %>
+
+<div class="container mt-4">
+
+  <h3>Update Profile</h3>
+
+  <form action="/profile/edit" method="POST">
+
+    <!-- SKILLS -->
+    <div class="mb-3">
+      <label class="form-label">Skills (comma separated)</label>
+      <input type="text" name="skills" class="form-control"
+        placeholder="e.g. JavaScript, Node.js, MongoDB">
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="mb-3">
+      <label class="form-label">Education</label>
+
+      <input type="text" name="degree" class="form-control mb-2" placeholder="Degree">
+      <input type="text" name="college" class="form-control mb-2" placeholder="College">
+      <input type="number" name="year" class="form-control" placeholder="Year">
+    </div>
+     <input
+               type="text"
+               name="resume"
+               class="form-control mb-3"
+            >
+
+    <button class="btn btn-primary">
+      Save Details
+    </button>
+
+  </form>
+
+</div>
